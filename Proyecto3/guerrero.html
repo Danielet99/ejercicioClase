@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guerrero</title>
+    <link rel="stylesheet" href="./css/clases.css" />
+    <script src="js/cookie.js"></script>
+    <style>
+      *{
+        text-align: justify;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="guerrero" id="imagen"></div>
+    <div id="contenido">
+      <h1>Guerrero</h1>
+      <br />
+      <p>
+        <img src="./img/GuerreroPath.jpg" id="imgGuerrero" />Algunos toman las armas
+        por la gloria, la riqueza, o la venganza. Otros batallan para probarse a
+        si mismos, proteger a otros, o porque no saben hacer nada más. Incluso
+        otros aprenden los caminos de las armas para afinar sus cuerpos en
+        batalla y demostrar su valía en la forja de la guerra. Señores del campo
+        de batalla, los guerreros son muy dispares, entrenando con muchas armas
+        o sólo una, perfeccionando los usos de la armadura, aprendiendo las
+        técnicas de lucha de exóticos maestros, y estudiando el arte del
+        combate, todo para convertirse ellos mismos en armas vivientes. Mucho
+        más que simples matones, estos guerreros cualificados revelan la verdad
+        mortífera de sus armas, volviendo trozos de metal en armas capaces de
+        domar reinos, masacrar monstruos, y enaltecer los corazones de los
+        ejércitos. Soldados, caballeros, cazadores, y artistas de la guerra, los
+        guerreros son campeones sin parangón, y ¡ay de aquellos que se atreven a
+        levantarse contra ellos!
+      </p>
+      <br />
+      <p>
+        <strong> Papel:</strong> Los Guerreros sobresalen en combate derrotando
+        a sus enemigos, controlando el flujo de la batalla, y sobreviviendo a
+        incursiones. Si bien sus armas y métodos específicos les conceden una
+        amplia variedad de tácticas, pocos pueden igualar a los guerreros en la
+        destreza de la pura batalla.
+      </p>
+      <br />
+      <p><strong>Alineamiento:</strong> cualquiera</p>
+      <br />
+      <p><strong>Dado de Golpe:</strong> d10</p>
+      <br />
+      <p>
+        <b>Habilidades de clase:</b> Artesanía (Int), Intimidar (Car), Montar
+        (Des), Nadar (Fue), Profesión (Sab), Saber (dungeons) (Int), Saber
+        (ingeniería) (Int), Supervivencia (Sab), Trato con animales (Car) y
+        Trepar (Fue).<br />
+        <strong>Rangos de habilidad por nivel:</strong> 2 + modificador de
+        Inteligencia. <br />
+      </p>
+      <br />
+
+      <div id="rasgos">
+        <h2>Rasgos de Clase</h2>
+        <br />
+        <p>
+          <strong>Competencia con armas y armaduras: </strong> Un guerrero es
+          competente con todas las armas sencillas y marciales y con todas las
+          armaduras (pesadas, intermedias y ligeras) y escudos (incluyendo
+          escudos paveses).
+        </p>
+        <br />
+        <p>
+          <strong>Dotes adicionales: </strong> A primer nivel, y cada nivel par
+          en adelante, un guerrero gana una dote adicional además de la ganada
+          por el avance normal (lo que significa que el guerrero gana una dote
+          en cada nivel). Esta dote adicional debe ser seleccionada de la lista
+          de dotes de combate, también llamadas a veces “dotes adicionales de
+          guerrero”.
+        </p>
+        <br />
+        <p>
+          Al llegar a nivel 4, y cada cuatro niveles posteriores (8º, 12º y
+          siguientes), un guerrero puede escoger aprender una nueva dote en
+          lugar de una dote que ya hubiera aprendido. En efecto, el guerrero
+          pierde la dote a cambio de una nueva. La vieja dote no puede haber
+          sido utilizada como un requisito previo de otra dote (que posea el
+          guerrero), clase de prestigio, u otra aptitud. Un guerrero sólo puede
+          cambiar una dote por nivel y debe escoger si desea o no cambiar la
+          dote en el momento en que gana una nueva dote al subir de nivel.
+        </p>
+        <br />
+        <p>
+          <strong>Valentía: </strong> Empezando a nivel 2, un guerrero gana un
+          bonificador de + 1 a su TS de Voluntad contra miedo. Este bonificador
+          aumenta en +1 cada cuatro niveles a partir del segundo.
+        </p>
+        <br />
+        <p>
+          <strong>Entrenamiento con armaduras: </strong>Empezando a nivel 3, un
+          guerrero aprende a ser más ágil mientras lleva armadura. Siempre que
+          lleve una armadura, reduce la penalización por llevar armadura en 1
+          (con un mínimo de 0) e incrementa el bonificador máximo de Destreza
+          permitido por esa armadura en 1. Cada cuatro niveles tras eso (7º, 11º
+          y 15º), estos bonificadores se incrementan en +1 cada vez, hasta una
+          reducción máxima del penalizador de armadura de -4.y un incremento de
+          + 4 a la máxima bonificación de Destreza permitida.
+        </p>
+        <br />
+        <p>
+          Además, un guerrero puede mover su velocidad normal mientras use una
+          armadura intermedia. A nivel 7, un guerrero puede moverse a su
+          velocidad normal mientras use armadura pesada.
+        </p>
+        <br />
+        <p>
+          <strong>Entrenamiento en armas (Ex): </strong>A partir de nivel 5, un
+          guerrero puede seleccionar un grupo de armas, como se señala abajo.
+          Cada vez que ataque con un arma de ese grupo, gana un bonificador de +
+          1 a las tiradas de ataque y daño.
+        </p>
+        <br />
+        <p>
+          Cada cuatro niveles en adelante (9º, 13º, y 17º), un guerrero obtiene
+          entrenamiento en otro grupo de armas. Gana un bonificador de +1 a las
+          tiradas de ataque y daño cuando use un arma de ese grupo. Además, los
+          bonificadores obtenidos en cada grupo de armas se incrementan en +1.
+          Por ejemplo, cuando un guerrero alcanza el nivel 9, recibe un
+          bonificador de + 1 a las tiradas de ataque y daño con un grupo de
+          armas y un bonificador de + 2 a la tirada de ataque y daño con el
+          grupo de de armas seleccionado a nivel 5. Los bonificadores obtenidos
+          por grupos que se solapan no se apilan. Se elige el bonificador más
+          grande dado por un arma si ésta está en dos o más grupos.
+        </p>
+        <br />
+        <p>
+          Un guerrero también añade este bonificador en cualquier maniobra de
+          combate hecha con armas de este grupo. Este bonificador también se
+          aplica a la Defensa contra Maniobras de Combate del guerrero cuando se
+          defienda contra intentos de desarmar y romper hecho contra armas de
+          este grupo.
+        </p>
+        <br />
+
+        <p>
+          <strong>Maestría con la armadura (Ex): </strong>A nivel 19, un
+          guerrero gana Reducción del daño 5/- cada vez que lleve armadura o use
+          un escudo
+        </p>
+        <p>
+          <strong>Maestría con las armas (Ex): </strong>A nivel 20, un guerrero
+          elige un arma, como la espada larga, gran hacha o arco largo.
+          Cualquier ataque hecho con ese arma confirma automáticamente todas las
+          amenazas de crítico y tiene su multiplicador de daño incrementado en
+          +1 (x2 se convierte en x3, por ejemplo). Además, no puede ser
+          desarmado mientras empuñe un arma de este tipo.
+        </p>
+      </div>
+
+      <table>
+        <tbody>
+          <tr class="tablaClaseCab"></tr>
+          <tr class="tablaClaseCab">
+            <td>
+              <b>Nivel </b>
+            </td>
+            <td>
+              <b>Ataque base</b>
+            </td>
+            <td>
+              <b>S. de Fort.</b>
+            </td>
+            <td>
+              <b>S. de Ref.</b>
+            </td>
+            <td>
+              <b>S. de Vol.</b>
+            </td>
+            <td>
+              <b>Especial</b>
+            </td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>+1</td>
+            <td>+2</td>
+            <td>+0</td>
+            <td>+0</td>
+            <td>Dote adicional</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>+2</td>
+            <td>+3</td>
+            <td>+0</td>
+            <td>+0</td>
+            <td>Dote adicional, Valentía 1</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>+3</td>
+            <td>+3</td>
+            <td>+1</td>
+            <td>+1</td>
+            <td>Entrenamiento con armaduras 1</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>+4</td>
+            <td>+4</td>
+            <td>+1</td>
+            <td>+1</td>
+            <td>Dote adicional</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>+5</td>
+            <td>+4</td>
+            <td>+1</td>
+            <td>+1</td>
+            <td>Entrenamiento en armas 1</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>+6/+1</td>
+            <td>+5</td>
+            <td>+2</td>
+            <td>+2</td>
+            <td>Dote adicional, Valentía 2</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>+7/+2</td>
+            <td>+5</td>
+            <td>+2</td>
+            <td>+2</td>
+            <td>Entrenamiento con armaduras 2</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>+8/+3</td>
+            <td>+6</td>
+            <td>+2</td>
+            <td>+2</td>
+            <td>Dote adicional</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>+9/+4</td>
+            <td>+6</td>
+            <td>+3</td>
+            <td>+3</td>
+            <td>Entrenamiento en armas 2</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>+10/+5</td>
+            <td>+7</td>
+            <td>+3</td>
+            <td>+3</td>
+            <td>Dote adicional, Valentía 3</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>+11/+6/+1</td>
+            <td>+7</td>
+            <td>+3</td>
+            <td>+3</td>
+            <td>Entrenamiento con armaduras 3</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>+12/+7/+2</td>
+            <td>+8</td>
+            <td>+4</td>
+            <td>+4</td>
+            <td>Dote adicional</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>+13/+8/+3</td>
+            <td>+8</td>
+            <td>+4</td>
+            <td>+4</td>
+            <td>Entrenamiento en armas 3</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>+14/+9/+4</td>
+            <td>+9</td>
+            <td>+4</td>
+            <td>+4</td>
+            <td>Dote adicional, Valentía 4</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>+15/+10/+5</td>
+            <td>+9</td>
+            <td>+5</td>
+            <td>+5</td>
+            <td>Entrenamiento con armaduras 4</td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>+16/+11/+6/+1</td>
+            <td>+10</td>
+            <td>+5</td>
+            <td>+5</td>
+            <td>Dote adicional</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>+17/+12/+7/+2</td>
+            <td>+10</td>
+            <td>+5</td>
+            <td>+5</td>
+            <td>Entrenamiento en armas 4</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>+18/+13/+8/+3</td>
+            <td>+11</td>
+            <td>+6</td>
+            <td>+6</td>
+            <td>Dote adicional, Valentía 5</td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>+19/+14/+9/+4</td>
+            <td>+11</td>
+            <td>+6</td>
+            <td>+6</td>
+            <td>Maestría con la armadura</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>+20/+15/+10/+5</td>
+            <td>+12</td>
+            <td>+6</td>
+            <td>+6</td>
+            <td>Dote adicional, Maestría con las armas</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <button id="ficha">Crear Ficha</button>
+      <br>
+      <button><a href="index.html">Volver</a></button>
+    </div>
+    <script src="./js/scroll.js"></script>
+  </body>
+</html>

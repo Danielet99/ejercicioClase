@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-image: url("../img/fondo.jpg");
+  background-repeat:no-repeat ;
+  color: lightgrey;
+  font-family: Arial, Helvetica, sans-serif;
+
+  background-size: 100% 100%;
+}
+
+.contenedor{
+  text-align: center;
+  width: 400px;
+  position: relative;
+  
+}
+
+.barraTras{
+  position: absolute;
+  height: 8px;
+  background-color: lightgray;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+}
+#barraFront{
+  position: absolute;
+  height: 8px;
+  background-color: orangered;
+  border-radius: 5px;
+  border: none;
+}
+img{
+  height: 120px;
+  width: 120px;
+}
+

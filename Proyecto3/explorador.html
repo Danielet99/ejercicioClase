@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/clases.css" />
+    <script src="js/cookie.js"></script>
+    <title>Explorador</title>
+  </head>
+  <body>
+    <div class="explorador" id="imagen"></div>
+    <div id="contenido">
+      <h1>Explorador</h1>
+      <br />
+      <p>
+        <img src="./img/ExploradorPath.jpg" id="imgExplorador" />Para aquellos que
+        saborean la emoción de la caza, sólo hay depredadores y presas. Sean
+        cazadores, rastreadores o cazarrecompensas, los exploradores comparten
+        mucho en común: la maestría única en armas especializadas, la habilidad
+        para acechar incluso a la pieza de caza más evasiva y la capacidad para
+        derrotar a una amplia variedad de presas. Cazadores entendidos,
+        pacientes y hábiles, estos exploradores cazan hombres, bestias y
+        monstruos por igual, ganando perspicacia en la senda del depredador,
+        habilidad en entornos variados e incluso una habilidad marcial letal.
+        Mientras que algunos rastrean a criaturas devorahombres para proteger la
+        frontera, otros persiguen presas más astutas, incluso fugitivos entre su
+        propia gente.
+      </p>
+      <br />
+      <p>
+        <strong>Papel:</strong> los exploradores son hábiles en la escaramuza,
+        ya sea en combate cuerpo a cuerpo o a distancia, capaces de bailar con
+        destreza dentro y fuera de la batalla. Sus habilidades les permiten
+        hacer un daño significativo a determinados tipos de enemigos, pero sus
+        conocimientos son valiosos contra todo tipo de enemigos.
+      </p>
+      <br />
+      <p><strong>Alineamiento:</strong> Cualquiera</p>
+      <br />
+      <p><strong>Dado de Golpe:</strong> d10</p>
+      <br />
+      <p>
+        <strong>Habilidades de clase:</strong> Artesanía (Int), Conocimiento de
+        conjuros (Int), Curar (Sab), Intimidar (Car), Montar (Des), Nadar (Fue),
+        Percepción (Sab), Profesión (Sab), Saber (Dungeons) (Int), Saber
+        (Geografía) (Int), Saber (Naturaleza) (Int), Sigilo (Des), Supervivencia
+        (Sab), Trato con animales (Car) y Trepar (Fue)<br />
+        <strong>Rangos de habilidad por nivel:</strong> 6 +modificador de
+        Inteligencia
+      </p>
+      <br />
+      <h2>Rasgos de Clase</h2>
+      <br />
+      <p>
+        <strong>Competencia con armas y armaduras: </strong>un explorador es
+        competente con todas las armas simples y marciales, con las armaduras
+        ligeras e intermedias y con los escudos (excepto escudos paveses).
+      </p>
+      <br />
+      <p>
+        <strong>Enemigo predilecto (Ex): </strong>a nivel 1, un explorador elige
+        un tipo de criatura de la tabla de enemigos predilectos. Obtiene un
+        bonificador +2 a las pruebas de Engañar, Saber, Percepción, Averiguar
+        intenciones y Supervivencia contra las criaturas del tipo seleccionado.
+        Del mismo modo, recibe un bonificador +2 a las tiradas de ataque y daño
+        contra ellos. Un explorador puede hacer pruebas de Saber no entrenadas
+        al intentar identificar a estas criaturas.
+      </p>
+      <br />
+      <p>
+        A nivel 5º y cada cinco niveles en adelante (10º, 15º y 20º), el
+        explorador puede elegir un enemigo predilecto adicional. Además, a cada
+        intervalo, el bonificador contra uno cualquiera de sus enemigos
+        predilectos (incluyendo, si lo desea, el que acaba de elegir) aumenta en
+        +2.
+      </p>
+      <br />
+      <p>
+        Si el explorador elige humanoides o ajenos como enemigo predilecto, debe
+        elegir un subtipo asociado como se indica en la tabla (ten en cuenta que
+        hay otros tipos de humanoide para elegir en el
+        <em>Bestiario de Pathfinder RPG</em>, aquellos mostrados en la tabla son
+        simplemente los más comunes. Si una criatura específica entra en más de
+        una categoría de enemigos predilectos, los bonificadores del explorador
+        no se aplican, simplemente usa el que sea más alto.
+      </p>
+      <table>
+        <tbody>
+          <tr>
+            <td colspan="2">Enemigos predilectos del Explorador</td>
+          </tr>
+          <tr class="tablaClaseCab">
+            <td>Tipo (Subtipo)</td>
+            <td>Tipo (Subtipo)</td>
+          </tr>
+          <tr>
+            <td>Aberración</td>
+            <td>Humanoide (otro subtipo))</td>
+          </tr>
+          <tr>
+            <td>Animal</td>
+            <td>Bestia mágica</td>
+          </tr>
+          <tr>
+            <td>Constructo</td>
+            <td>Humanoide monstruoso</td>
+          </tr>
+          <tr>
+            <td>Dragón</td>
+            <td>Cieno</td>
+          </tr>
+          <tr>
+            <td>Hada</td>
+            <td>Ajeno (aire)</td>
+          </tr>
+          <tr>
+            <td>Humanoide (acuático)</td>
+            <td>Ajeno (caótico)</td>
+          </tr>
+          <tr>
+            <td>Humanoide (enano )</td>
+            <td>Ajeno (tierra)</td>
+          </tr>
+          <tr>
+            <td>Humanoide (elfo )</td>
+            <td>Ajeno (malvado)</td>
+          </tr>
+          <tr>
+            <td>Humanoide (gigante)</td>
+            <td>Ajeno (fuego)</td>
+          </tr>
+          <tr>
+            <td>Humanoide (trasgoide)</td>
+            <td>Ajeno (bien)</td>
+          </tr>
+          <tr>
+            <td>Humanoide (gnoll)</td>
+            <td>Ajeno (legal)</td>
+          </tr>
+          <tr>
+            <td>Humanoide (gnomo)</td>
+            <td>Ajeno (nativo)</td>
+          </tr>
+          <tr>
+            <td>Humanoide (mediano)</td>
+            <td>Ajeno (agua)</td>
+          </tr>
+          <tr>
+            <td>Humanoide (humano)</td>
+            <td>Planta</td>
+          </tr>
+          <tr>
+            <td>Humanoide (orco)</td>
+            <td>Muerto viviente</td>
+          </tr>
+          <tr>
+            <td>Humanoide (reptiliano)</td>
+            <td>Sabandija</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <p>
+        <strong>Rastrear (Ex):</strong> un explorador suma la mitad de su nivel
+        (mínimo 1) a las pruebas de Supervivencia hechas para seguir rastros.
+      </p>
+      <br />
+      <p>
+        <strong>Empatía salvaje (Ex): </strong> un explorador puede mejorar la
+        actitud de un animal. Esta aptitud funciona como una prueba de
+        Diplomacia hecha para mejorar la actitud de una persona. El druida tira
+        1d20 y añade su nivel de druida y su modificador de Carisma para
+        determinar el resultado de la prueba de Empatía animal. El animal
+        doméstico típico tiene una actitud inicial de indiferente, mientras que
+        los animales salvajes son normalmente malintencionados.
+      </p>
+      <br />
+      <p>
+        Para usar la empatía salvaje, el explorador y el animal deben estar a un
+        máximo de 30 pies uno del otro bajo circunstancias normales.
+      </p>
+      <br />
+      <p>
+        Generalmente, influenciar a un animal de esta forma requiere 1 minuto,
+        pero al igual que influenciar a personas, podría llevar más o menos
+        tiempo.
+      </p>
+      <br />
+      <p>
+        Un explorador también puede usar esta aptitud para influenciar a una
+        bestia mágica con una puntuación de Inteligencia de 1 ó 2, pero recibe
+        un penalizador -4 a la prueba.
+      </p>
+      <br />
+      <p>
+        <strong>Dote de Estilo de Combate (Ex): </strong>a 2º nivel, un
+        explorador debe elegir entre dos estilos de combate a seguir: tiro con
+        arco o combate con dos armas. La especialización del explorador se
+        manifiesta en forma de dotes adicioanles a 2º, 6º, 10º, 14º y 18º nivel.
+        Puede elegir dotes de su estilo de combate elegido, incluso si no cumple
+        los requisitos normales.
+      </p>
+      <br />
+      <p>
+        Si el explorador elige tiro con arco, puede elegir de la siguiente lista
+        cuando gane una dote de estilo de combate: Disparo a larga distancia,
+        Disparo a bocajarro, Disparo preciso y Disparo rápido. A 6º nivel, añade
+        Disparo preciso mejorado y Disparo múltiple a la lista. A 10º nivel,
+        añade Disparo a la carrera y Puntería precisa a la lista.
+      </p>
+      <br />
+      <p>
+        Si el explorador elige combate con dos armas, puede seleccionar dotes de
+        la siguiente lista cuando obtenga una dote de estilo de combate: Doble
+        tajo, Golpear con el escudo mejorado, Desenvainado rápido y Combate con
+        dos armas. A 6º nivel, añade Combate con dos armas mejorado y Defensa
+        con dos armas a la lista. A 10º nivel, añade Combate con dos armas mayor
+        y Desgarrar con dos armas a la lista.
+      </p>
+      <br />
+      <p>
+        Los beneficios de las dotes de estilo elegidas por el explorador sólo se
+        aplican cuando lleve armadura ligera, intermedia o ninguna armadura.
+        Pierde todos los beneficios de sus dotes de estilo de combate cuando
+        lleve armadura pesada. Una vez que un explorador elige un estilo de
+        combate, ya no puede cambiarlo.
+      </p>
+      <br />
+      <p>
+        <strong>Aguante:</strong> un explorador obtiene Aguante como dote
+        adicional a nivel 3.
+      </p>
+      <br />
+      <p>
+        <strong>Terreno predilecto (Ex): </strong>a nivel 3, un explorador puede
+        elegir un tipo de terreno de la tabla de Terrenos predilectos. El
+        explorador gana un bonificador +2 a las pruebas de Iniciativa y a las
+        pruebas de Saber (geografía), Percepción, Sigilo y Supervivencia cuando
+        esté en ese tipo de terreno. Un explorador viajando por su terreno
+        predilecto normalmente no deja rastro y no puede ser rastreado (aunque
+        puede dejar un rastro si lo desea).
+      </p>
+      <br />
+      <p>
+        A 8º nivel y cada cinco niveles en adelante, el explorador puede elegir
+        un terreno predilecto adicional. Además, en cada uno de esos intervalos,
+        el bonificador para uno cualquiera de sus terrenos predilectos
+        (incluyendo el que acaba de elegir, si lo desea) aumenta en +2.
+      </p>
+      <br />
+      <p>
+        Si un terreno específico entra dentro de más de una categoría de terreno
+        predilecto, los bonificadores del explorador no se apilan, simplemente
+        utiliza el bonificador más alto.
+      </p>
+      <br />
+      <table>
+        <tbody>
+          <tr>
+            <td>Terrenos Predilectos</td>
+          </tr>
+          <tr>
+            <td>Frío (hielo, glaciares, nieve y tundra)</td>
+          </tr>
+          <tr>
+            <td>Desierto (arena y tierras baldías)</td>
+          </tr>
+          <tr>
+            <td>Bosque (coníferas y caducifolios)</td>
+          </tr>
+          <tr>
+            <td>Jungla</td>
+          </tr>
+          <tr>
+            <td>Montaña (incluidas colinas)</td>
+          </tr>
+          <tr>
+            <td>Llanura</td>
+          </tr>
+          <tr>
+            <td>Los Planos (elige uno distinto del Plano Material)</td>
+          </tr>
+          <tr>
+            <td>Pantano</td>
+          </tr>
+          <tr>
+            <td>Subterráneo (cuevas y dungeons)</td>
+          </tr>
+          <tr>
+            <td>Urbano (edificios, calles y alcantarillas)</td>
+          </tr>
+          <tr>
+            <td>Agua (por encima y bajo la superficie)</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <p>
+        <strong>Vínculo del cazador (Ex): </strong>a 4º nivel, un explorador
+        forma un vínculo con sus compañeros de caza. Este vínculo puede adoptar
+        una de las siguientes formas y una vez que se ha elegido, no puede
+        cambiarse. La primera es un vínculo con sus compañeros. Este vínculo le
+        permite gastar una acción de movimiento para conceder la mitad de sus
+        bonificadores por enemigo predilecto contra un blanco concreto del tipo
+        apropiado a todos los aliados que se encuentren a un máximo de 30 pies y
+        que puedan verle u oírle. Este bonificador dura un número de asaltos
+        igual al modificador de Sabiduría del explorador (mínimo 1). Este
+        bonificador no se apila con otros bonificadores por enemigo predilecto
+        que posean los aliados, usan el que sea mayor.
+      </p>
+      <br />
+      <p>
+        La segunda opción es un vínculo cercano con un compañero animal. El
+        explorador que elija un compañero animal, puede seleccionarlo de la
+        siguiente lista: tejón, ave, camello, felino (pequeño), rata terrible,
+        perro, caballo, poni, serpiente (víbora o constrictora) o lobo. Si la
+        campaña tiene lugar total o parcialmente en un entorno acuático, el
+        explorador puede elegir un tiburón como compañero. Este animal es un
+        compañero leal que sigue al explorador en sus aventuras de la forma
+        apropiada a su raza. El compañero animal de un explorador comparte sus
+        bonificadores por enemigo y terreno predilectos.
+      </p>
+      <br />
+      <p>
+        Esta aptitud funciona como la aptitud de compañero animal del druida
+        (que es parte del rasgo de clase de Vínculo natural), excepto en que el
+        nivel efectivo de druida del explorador es igual a su nivel de
+        explorador -3.
+      </p>
+      <br />
+      <p>
+        <strong>Conjuros:</strong> comenzando a 4º nivel, un explorador obtiene
+        la capacidad de lanzar un pequeño número de conjuros divinos, que se
+        eligen de la lista de conjuros de explorador. Un explorador debe elegir
+        y preparar sus conjuros por adelantado..
+      </p>
+      <br />
+      <p>
+        Para preparar o lanzar un conjuro, un explorador debe poseer una
+        puntuación de Sabiduría de al menos 10 + el nivel del conjuro. La Clase
+        de Dificultad para una tirada de salvación contra los conjuros de un
+        explorador es 10 + el nivel del conjuro + el modificador de Sabiduría
+        del explorador.
+      </p>
+      <br />
+      <p>
+        Como otros lanzadores de conjuros, un explorador sólo puede lanzar un
+        número determinado de conjuros de cada nivel al día. Su selección diaria
+        de conjuros se indica en la tabla de más abajo. Además, recibe conjuros
+        adicionales al día si tiene una elevada puntuación de Sabiduría. Cuando
+        la tabla indica que un explorador tiene 0 conjuros al día de un nivel
+        determinado, sólo obtiene los conjuros adicionales debidos a su
+        puntuación de Sabiduría para ese nivel de conjuro.
+      </p>
+      <br />
+      <p>
+        Un explorador debe dedicar 1 hora al día a meditar tranquilamente para
+        recuperar su selección diaria de conjuros. Un explorador puede preparar
+        y lanzar cualquier conjuro de la lista de explorador, suponiendo que
+        pueda lanzar conjuros de ese nivel, pero debe seleccionar qué conjuros
+        prepara durante su meditación diaria.
+      </p>
+      <br />
+      <p>
+        Hasta el nivel 3, un explorador no posee nivel de lanzador. A nivel 4 y
+        en adelante, su nivel de lanzador es igual a su nivel de explorador -3.
+      </p>
+      <br />
+      <p>
+        <strong>Zancada forestal (Ex): </strong>comenzando a nivel 7 º, un
+        explorador puede moverse a través de cualquier clase de maleza (como
+        arbustos espinosos, brezos, áreas cubiertas por la maleza y terrenos
+        similares) a su velocidad normal sin recibir daño o sufrir otro
+        impedimento. Los arbustos espinosos, brezos y áreas con maleza
+        manipuladas mágicamente para impedir el movimiento, sin embargo, todavía
+        le afectan.
+      </p>
+      <br />
+      <p>
+        <strong>Rastreador veloz (Ex): </strong>comenzando a 8º nivel, un
+        explorador puede moverse a su velocidad normal mientras usa
+        Supervivencia para seguir rastros sin el penalizador normal de -5. Sólo
+        tiene un penalizador -10 (en lugar del habitual -20) al moverse al doble
+        de su velocidad normal mientras rastrea.
+      </p>
+      <br />
+      <p>
+        <strong>Evasión (Ex): </strong>cuando llega a nivel 9, un explorador
+        puede evitar incluso los ataques mágicos o insólitos con gran agilidad.
+        Si supera uan tirada de Salvación de Reflejos contra un ataque que
+        normalmente causa la mitad del daño con una tirada exitosa, en su lugar
+        no recibe ningún daño. Evasión puede usarse sólo si el explorador lleva
+        armadura ligera, intermedia o ninguna armadura. Un explorador indefenso
+        no obtiene el beneficio de evasión.
+      </p>
+      <br />
+      <p>
+        <strong>Presa (Ex): </strong> a 11º nivel, un explorador puede, como
+        acción estándar, designar a un objetivo dentro de su línea de visión
+        como su presa. Mientras esté siguiento el rastro de su presa, un
+        explorador puede elegir 10 en sus pruebas de habilidad de Supervivencia
+        mientras se mueve a velocidad normal, sin penalización. Además, recibe
+        un bonificador introspectivo +2 a las tiradas de ataque hechas contra su
+        presa y todas las amenazas de crítico se confirman automáticamente. Un
+        explorador no puede tener más de una presa al mismo tiempo y el tipo de
+        criatura debe coincidir con uno de sus tipos de enemigo predilecto.
+        Puede descartar este efecto en cualquier momento como acción gratuita,
+        pero no puede serleccionar una nueva presa durante 24 horas. Si el
+        explorador ve pruebas de que su presa está muerta, puede seleccionar una
+        nueva presa tras esperar 1 hora..
+      </p>
+      <br />
+      <p>
+        <strong>Camuflaje (Ex): </strong>un explorador de 12º nivel o mayor
+        puede usar la habilidad de Sigilo para ocultarse en cualquiera de sus
+        terrenos predilectos, incluso si el terreno no proporciona cobertura u
+        ocultación.
+      </p>
+      <br />
+      <p>
+        <strong>Evasión mejorada (Ex): </strong>a 16º nivel, la evasión del
+        explorador mejora. Esta aptitud funciona como evasión, excepto en que
+        además de no recibir daño al superar una tirada de salvación de Reflejos
+        contra un ataque, sólo recibe la mitad del daño con una tirada de
+        salvación fallida. Un explorador indefenso no recibe los beneficios de
+        la evasión.
+      </p>
+      <br />
+      <p>
+        <strong>Esconderse a plena vista (Ex): </strong>mientras está en alguno
+        de sus terrenos predilectos, un explorador de 17º nivel o mayor puede
+        utilizar la habilidad de Sigilo incluso mientras está siendo observado.
+      </p>
+      <br />
+      <p>
+        <strong>Presa mejorada (Ex): </strong>a 19º nivel, la aptitud del
+        explorador para cazar a su presa mejora. Ahora puede elegir una presa
+        como acción gratuita y puede elegir 20 mientras usa su habilidad de
+        Superviviencia para rastrear a su presa, mientras se mueve a velocidad
+        normal sin penalización. Su bonificador introspectivo al atacar a
+        supresa mejora hasta +4. Si su presa muere o se descarta, puede elegir
+        una nueva tras 10 minutos.
+      </p>
+      <br />
+      <p>
+        <strong>Maestro cazador (Ex): </strong>un explorador de 20º nivel se
+        convierte en un maestro cazador. Siempre puede moverse a velocidad
+        completa utilizando Supervivencia para seguir rastros sin penalización.
+        Puede, como acción estándar, hacer un único ataque contra su enemigo
+        predilecto con el bonificador de ataque completo. Si el ataque impacta,
+        el blanco recibe el daño normalmente y debe hacer una tirada de
+        salvación de Fortaleza o morir. La CD de esta tirada de salvación es
+        igual a 10 + 1/2 del nivel del explorador + el modificador de Sabiduría
+        del explorador. Un explorador también puede elegir causar una cantidad
+        de daño atenuado igual a los puntos de vida actuales de la criatura. Una
+        tirada de salvación con éxito niega este daño. Un explorador puede
+        utilizar esta aptitud una vez al día contra cada tipo de enemigo
+        predilecto que posea, pero no contra la misma criatura más de una vez en
+        un periodo de 24 horas.
+      </p>
+      <br />
+      <h2>Nuevos estilos de combate</h2>
+      <br />
+      <p>
+        A nivel 2, un explorador debe elegir uno de los dos estilos de combate
+        presentados en el manual básico o uno de los siguientes nuevos estilos
+        de combate: ballesta, combate montado, arma natural, arma a dos manos o
+        estilo de arma y escudo. El explorador puede elegir dotes de su estilo
+        de combate elegido incluso si no cumple los prerrequisitos normales.
+      </p>
+      <br />
+      <p>
+        <strong>Ballesta:</strong> si el explorador elige el estilo de ballesta,
+        puede elegir de entre la siguiente lista cuando obtiene una dote de
+        estilo de combate: Disparo concentrado, Disparo preciso, Puntería mortal
+        y Recarga rápida. A nivel 6 añade Disparo preciso mejorado y Maestría
+        con ballestas y a la lista. A nivel 10, añade Disparo a la carrera y
+        Puntería precisa a la lista.
+      </p>
+      <br />
+      <p>
+        <strong>Combate montado:</strong> si el explorador elige el estilo de
+        combate montado, puede elegir de entre la siguiente lista cuando obtiene
+        una dote de estilo de combate: Ataque al galope, Combatir desde una
+        montura, Disparar desde una montura y Truco desde una montura. A nivel
+        6, añade Carga impetuosa y Escudarse desde una montura a la lista. A
+        nivel 10, añade Desmontar jinete y Hostigador montado.
+      </p>
+      <br />
+      <p>
+        <strong>Arma natural:</strong> si el explorador elige el estilo de arma
+        natural, puede elegir de entre la siguiente lista cuando obtiene una
+        dote de estilo de combate: Arma natural mejorada, Aspecto de la bestia,
+        Garras destripadoras y Soltura con un arma. A nivel 6, añade Garras
+        mágicas y Golpe vital a la lista. A nivel 10, añade Ataque múltiple e
+        Golpe vital mejorado a la lista.
+      </p>
+      <br />
+      <p>
+        <strong>Arma a dos manos:</strong> si el explorador elige el estilo de
+        arma a dos manos, puede elegir de entre la siguiente lista cuando
+        obtiene una dote de estilo de combate: Asalto a empujones, Ataque
+        poderoso, Escudo de mandobles y Hendedura. A nivel 6, añade Gran
+        hendedura y Soltura furiosa y a la lista. A nivel 10, añade Matanza
+        pavorosa y Romper arma mejorado a la lista.
+      </p>
+      <br />
+      <p>
+        <strong>Arma y escudo:</strong> si el explorador elige el estilo de arma
+        y escudo, puede elegir de entre la siguiente lista cuando obtiene una
+        dote de estilo de combate: Combate con dos armas, Golpear con el escudo
+        mejorado y Golpetazo con el escudo. A nivel 6, añade Escudo salvador y
+        Maestro del escudo a la lista. A nivel 10, añade Golpetazo final y
+        Soltura mayor con los escudos a la lista.
+      </p>
+      <br />
+      <h2>Lista de Conjuros</h2>
+      <br />
+      <p>
+        Puedes consultar la lista de conjuros del Explorador
+        <a href="../Conjuros/ConjurosExploradorPF.php"><strong>aquí</strong></a
+        >.
+      </p>
+      <br />
+      <table>
+        <tbody>
+          <tr>
+            <td colspan="11">
+              <div>
+                <b>El Explorador </b>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td rowspan="2">
+              <p>
+                <b>Nivel </b>
+              </p>
+            </td>
+            <td rowspan="2">Ataque base</td>
+            <td rowspan="2">
+              <b>S. de Fort.</b>
+            </td>
+            <td rowspan="2">
+              <b>S. de Ref.</b>
+            </td>
+            <td rowspan="2">
+              <b>S. de Vol.</b>
+            </td>
+            <td rowspan="2">
+              <b>Especial</b>
+            </td>
+            <td colspan="5">Conjuros diarios</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td colspan="2">4</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>+1</td>
+            <td>+2</td>
+            <td>+2</td>
+            <td>+0</td>
+            <td>1º Enemigo predilecto, Rastrear, Empatía salvaje</td>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>+2</td>
+            <td>+3</td>
+            <td>+3</td>
+            <td>+0</td>
+            <td>Dote de Estilo de combate</td>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>+3</td>
+            <td>+3</td>
+            <td>+3</td>
+            <td>+1</td>
+            <td>Aguante, 1º Terreno predilecto</td>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>+4</td>
+            <td>+4</td>
+            <td>+4</td>
+            <td>+1</td>
+            <td>Vínculo del cazador</td>
+            <td>0</td>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>+5</td>
+            <td>+4</td>
+            <td>+4</td>
+            <td>+1</td>
+            <td>2º Enemigo predilecto</td>
+            <td>1</td>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+          </tr>
+
+          <tr>
+            <td>6</td>
+            <td>+6/+1</td>
+            <td>+5</td>
+            <td>+5</td>
+            <td>+2</td>
+            <td>Dote de Estilo de combate</td>
+            <td>1</td>
+            <td>--</td>
+            <td>--</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>+7/+2</td>
+            <td>+5</td>
+            <td>+5</td>
+            <td>+2</td>
+            <td>Zancada forestal</td>
+            <td>1</td>
+            <td>0</td>
+            <td>--</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>+8/+3</td>
+            <td>+6</td>
+            <td>+6</td>
+            <td>+2</td>
+            <td>Rastreador veloz , 2º Terreno predilecto</td>
+            <td>1</td>
+            <td>1</td>
+            <td>--</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>+9/+4</td>
+            <td>+6</td>
+            <td>+6</td>
+            <td>+3</td>
+            <td>Evasión</td>
+            <td>2</td>
+            <td>1</td>
+            <td>--</td>
+            <td>--</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>+10/+5</td>
+            <td>+7</td>
+            <td>+7</td>
+            <td>+3</td>
+            <td>3º Enemigo Predilecto, Dote de Estilo de combate</td>
+            <td>2</td>
+            <td>1</td>
+            <td>0</td>
+            <td>--</td>
+          </tr>
+
+          <tr>
+            <td>11</td>
+            <td>+11/+6/+1</td>
+            <td>+7</td>
+            <td>+7</td>
+            <td>+3</td>
+            <td>Presa</td>
+            <td>2</td>
+            <td>1</td>
+            <td>1</td>
+            <td colspan="2">--</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>+12/+7/+2</td>
+            <td>+8</td>
+            <td>+8</td>
+            <td>+4</td>
+            <td>Camuflaje</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1</td>
+            <td colspan="2">--</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>+13/+8/+3</td>
+            <td>+8</td>
+            <td>+8</td>
+            <td>+4</td>
+            <td>3º Terreno predilecto</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td colspan="2">0</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>+14/+9/+4</td>
+            <td>+9</td>
+            <td>+9</td>
+            <td>+4</td>
+            <td>Dote de Estilo de combate</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td colspan="2">1</td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>+15/+10/+5</td>
+            <td>+9</td>
+            <td>+9</td>
+            <td>+5</td>
+            <td>4º Enemigo predilecto</td>
+            <td>3</td>
+            <td>2</td>
+            <td>2</td>
+            <td colspan="2">1</td>
+          </tr>
+
+          <tr>
+            <td>16</td>
+            <td>+16/+11/+6/+1</td>
+            <td>+10</td>
+            <td>+10</td>
+            <td>+5</td>
+            <td>Evasión mejorada</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td colspan="2">1</td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>+17/+12/+7/+2</td>
+            <td>+10</td>
+            <td>+10</td>
+            <td>+5</td>
+            <td>Esconderse a plena vista</td>
+            <td>4</td>
+            <td>3</td>
+            <td>2</td>
+            <td colspan="2">1</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>+18/+13/+8/+3</td>
+            <td>+11</td>
+            <td>+11</td>
+            <td>+6</td>
+            <td>4º Terreno predilecto, Dote de Estilo de combate</td>
+            <td>4</td>
+            <td>3</td>
+            <td>2</td>
+            <td colspan="2">2</td>
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>+19/+14/+9/+4</td>
+            <td>+11</td>
+            <td>+11</td>
+            <td>+6</td>
+            <td>Presa mejorada</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td colspan="2">2</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>+20/+15/+10/+5</td>
+            <td>+12</td>
+            <td>+12</td>
+            <td>+6</td>
+            <td>5º Enemigo predilecto, maestro cazador</td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td colspan="2">3</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <button id="ficha">Crear Ficha</button>
+      <br>
+      <button><a href="index.html">Volver</a></button>
+    </div>
+    <script src="./js/scroll.js"></script>
+  </body>
+</html>

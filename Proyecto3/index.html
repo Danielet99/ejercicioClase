@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div>
+      <p id="selector" style="text-align: center;">
+        Selecciona la clase <img src="./img/flecha.png" id="img" class="rotar2" />
+      </p>
+    </div>
+    <ul id="lista" class="oculto" >
+      <li id="li1"><img src="img/espadita.png" style="width: 25px; height: 25px; padding-bottom: 10px;">Guerrero</li>
+      <li id="li2"><img src="img/baston.png" style="width: 20px; height: 20px; padding-bottom: 10px;">Mago</li>
+      <li id="li3"><img src="img/arco.png" style="width: 20px; height: 20px; padding-bottom: 10px;">Explorador</li>
+    </ul>
+
+    <label for="cookies" id="cooky"></label>
+  </body>
+      <script>
+        function getCookie(cname) {
+      let name = cname + "=";
+      let decodedCookie = decodeURIComponent(document.cookie);
+      let ca = decodedCookie.split(';');
+      for(let i = 0; i <ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+        }
+      }
+      return "";
+    }
+    console.log(getCookie("Mago")+"hola");
+    console.log(document.cookie);
+  </script>
+  <script src="./js/proyecto.js"></script>
+  
+</html>
